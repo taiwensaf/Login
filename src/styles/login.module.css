@@ -1,0 +1,176 @@
+.loginPage {
+  display: flex;
+  min-height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+
+.leftPanel {
+  flex: 1;
+  position: relative;
+  min-height: 100vh;
+  width: 0;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  display: flex;
+}
+
+.fullBgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  z-index: 0;
+  margin: 0;
+  padding: 0;
+  pointer-events: none;
+  user-select: none;
+  background: none;
+}
+
+/* 右侧卡片区 */
+.rightPanel {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 品牌组合（logo+字） */
+.brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  gap: 12px;
+}
+.brandLogo {
+  width: 48px;
+  height: 48px;
+}
+.brandText {
+  font-size: 2.7rem;
+  font-weight: 700;
+  color: #232946;
+  font-family: 'Inter', 'Segoe UI', 'Helvetica Neue', Arial, sans-serif;
+  letter-spacing: 1px;
+}
+
+/* 文本与描述 */
+.welcome {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #222e3a;
+  margin-bottom: 8px;
+  margin-left: 130px;
+}
+.desc {
+  font-size: 1rem;
+  color: #6b7280;
+  margin-bottom: 26px;
+  text-align: center;
+}
+
+/* 社交登录按钮区 */
+.socialButtons {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.socialBtn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  border: 1px solid #e5e7eb;
+  background: #fff;
+  color: #1f2937;
+  padding: 14px 18px;
+  border-radius: 8px;
+  font-size: 1.08rem;
+  font-weight: 500;
+  margin-bottom: 0;
+  transition: background 0.2s, border 0.2s;
+}
+.socialBtn:hover {
+  background: #f3f4f6;
+  border-color: #d1d5db;
+}
+
+/* 图标区，让图片更大 */
+.icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon img {
+  width: 28px;
+  height: 28px;
+}
+
+/* 分割线 */
+.or {
+  color: #9ca3af;
+  margin: 24px 0 16px 0;
+  font-size: 0.95rem;
+  letter-spacing: 2px;
+  text-align: center;
+}
+
+/* 输入框 */
+.input {
+  width: 100%;
+  padding: 10px 14px;
+  margin-bottom: 16px;
+  border-radius: 7px;
+  border: 1px solid #e5e7eb;
+  font-size: 1rem;
+  outline: none;
+  background: #f9fafb;
+  transition: border 0.2s;
+}
+.input:focus {
+  border: 1.5px solid #6366f1;
+}
+
+/* 继续按钮 */
+.continueBtn {
+  width: 100%;
+  background: #6366f1;
+  color: #fff;
+  border: none;
+  font-size: 1.05rem;
+  font-weight: 500;
+  padding: 10px 0;
+  border-radius: 7px;
+  cursor: pointer;
+  margin-bottom: 18px;
+  transition: background 0.2s;
+}
+.continueBtn:hover {
+  background: #4f46e5;
+}
+
+/* 底部注册提示 */
+.footer {
+  font-size: 0.98rem;
+  color: #6b7280;
+  text-align: center;
+}
+.register {
+  color: #6366f1;
+  text-decoration: none;
+  margin-left: 4px;
+}
+.register:hover {
+  text-decoration: underline;
+}
