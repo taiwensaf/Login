@@ -28,7 +28,7 @@ function LoginContent() {
       localStorage.setItem('user', JSON.stringify(user));
       
       // 重定向到首页
-      router.push('/');
+      router.push('/Login');
     } catch (error) {
       console.error('Login failed:', error);
       // 处理错误
@@ -49,7 +49,7 @@ function LoginContent() {
       {/* 左侧背景图 - 在移动端隐藏 */}
       <div className="hidden lg:flex lg:w-1/2 relative">
         <img
-          src="/image3.png"
+          src="/Login/image3.png"
           alt="Background"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -61,7 +61,7 @@ function LoginContent() {
           {/* Logo 和标题区域 */}
           <div className="text-center mb-6 lg:mb-8">
             <img
-              src="/image1.png"
+              src="/Login/image1.png"
               alt="Bytebase Logo"
               width={160}
               height={40}
@@ -81,7 +81,7 @@ function LoginContent() {
               className="w-full flex items-center justify-center gap-2 lg:gap-3 px-3 lg:px-4 py-2.5 lg:py-3 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm lg:text-base"
             >
               <img
-                src="/google.png"
+                src="/Login/google.png"
                 alt="Google"
                 width={18}
                 height={18}
@@ -96,7 +96,7 @@ function LoginContent() {
               className="w-full flex items-center justify-center gap-2 lg:gap-3 px-3 lg:px-4 py-2.5 lg:py-3 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm lg:text-base"
             >
               <img
-                src="/github.png"
+                src="/Login/github.png"
                 alt="GitHub"
                 width={18}
                 height={18}
@@ -110,7 +110,7 @@ function LoginContent() {
               className="w-full flex items-center justify-center gap-2 lg:gap-3 px-3 lg:px-4 py-2.5 lg:py-3 border border-gray-300 rounded-md hover:bg-gray-50 transition-colors text-sm lg:text-base"
             >
               <img
-                src="/microsoft.png"
+                src="/Login/microsoft.png"
                 alt="Microsoft"
                 width={18}
                 height={18}

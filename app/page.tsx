@@ -11,7 +11,7 @@ export default function Home() {
         {/* Logo 区域 */}
         <div className="flex items-center mb-12">
           <img
-            src="/image1.png"
+            src="/Login/image1.png"
             alt="Bytebase Logo"
             width={200}
             height={100}
@@ -49,7 +49,7 @@ export default function Home() {
           {/* 右侧图片区域 */}
           <div className="flex justify-center lg:justify-end">
             <img
-              src="/image2.png"
+              src="/Login/image2.png"
               alt="Bytebase Illustration"
               width={500}
               height={500}

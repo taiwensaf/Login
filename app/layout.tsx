@@ -24,8 +24,18 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* 用 link 标签引入 Geist 和 Geist Mono 字体 */}
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Geist+Sans:wght@400;700&family=Geist+Mono:wght@400;700&display=swap"
+        />
+      </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className="antialiased"
+        style={{
+          fontFamily: "'Geist Sans', 'Geist Mono', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif"
+        }}
       >
         {children}
       </body>
