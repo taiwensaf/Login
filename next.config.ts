@@ -2,6 +2,6 @@
 const nextConfig = {
   output: 'export',
   basePath: '/Login',
-  assetPrefix: '/Login/',
+  assetPrefix: '/Login',
 };
 module.exports = nextConfig;
